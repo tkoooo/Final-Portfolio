@@ -13077,18 +13077,13 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Alyssa-Bockman-and-Thalia-Koutsougeras">Alyssa Bockman and Thalia Koutsougeras<a class="anchor-link" href="#Alyssa-Bockman-and-Thalia-Koutsougeras">&#182;</a></h1><p>Milestone 1</p>
+<h1 id="Alyssa-Bockman-and-Thalia-Koutsougeras">Alyssa Bockman and Thalia Koutsougeras<a class="anchor-link" href="#Alyssa-Bockman-and-Thalia-Koutsougeras">&#182;</a></h1><p>Milestone 2</p>
 <p><strong>Final Project</strong> Disease Prevalence Across the States</p>
 <p>Main Data from: <a href="https://think.cs.vt.edu/corgis/csv/health/">https://think.cs.vt.edu/corgis/csv/health/</a></p>
 <p>GitHub: <a href="https://tkoooo.github.io/Final-Portfolio/">https://tkoooo.github.io/Final-Portfolio/</a></p>
 <h2 id="Project-Plan">Project Plan<a class="anchor-link" href="#Project-Plan">&#182;</a></h2><p><strong>Project Description and Goals:</strong> This dataset will allow us to examine the prevalence of various diseases across all 50 states over the last century. We plan to research factors such a vaccination rates and to try and understand the peaks and valleys in the dataset. We also want to examine what regions and states have been most and least affected and compare it with factors like weather patterns and population density.</p>
 <p><strong>Question</strong>: How does location correlate with probability of catching any 1 disease within the 20th century. Furhtermore, do other factors such as income and population density show this same correlation - this could potentially explain why certain states showed a higher incidence for disease when compared to others</p>
 <p><strong>Collaboration Plan:</strong> Our collaboration plan is to continue meeting at least once a week over zoom on Wednesday nights.</p>
-<p>Milestone 2 requirements 
-(5 Points) Professionalism: You have used both code comments and markdown cells to professionally and clearly document your work including having a clear and clean notebook; linking to resources and documents; and doing so with code that is reasonable and efficient. Your notebook is correct and contains the required links. In addition, you have written code that is interpretable – it contains comments where needed to understand, variable names are reasonable, and code that is reasonable and efficient. You have followed directions to turn in the file, clearly labeling everything. You have cited all sources and how you used them in the written portion of your answers.</p>
-<p>(5 Points) Extraction, Transform, and Load (ETL): You are now using more than one dataset and they are both loaded correctly using web scraping other techniques. The data is discussed in terms of what it is and how it could be used to answer the question of study. Where the data comes from and how it is collected is clearly documented with links and other relevant details. The data is imported and tidy according to the principles discussed in class. Dtypes are set properly and displayed within the notebook, NaN’s and other techniques are used following best practices discussed in class.</p>
-<p>(5 Points) Exploratory Data Analysis (EDA): At least 5 graphs and/or summary statistics/tables including cross-tabulations, groups, measures of central tendency, and/or any of the other EDA techniques discussed showing that you have started to investigate your data and have an understanding of what is in your dataset. Each of these pieces of analysis should have a corresponding markdown cell that clearly explains what is being shown and why.
-(5 Points) Model Questions: You have identified at least two plausible models that you could build using your data and the graphs in your EDA section support continuing the investigation. You have clearly identified independent and dependent variables and appropriate test/prediction methodology for each question.</p>
 
 </div>
 </div>
@@ -13103,7 +13098,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[125]:</div>
+<div class="prompt input_prompt">In&nbsp;[254]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -13137,7 +13132,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[255]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">cd</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">My</span> <span class="n">Drive</span><span class="o">/</span><span class="n">cmps3160</span><span class="o">/</span><span class="n">finalProject</span>
@@ -13175,7 +13170,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[256]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13199,13 +13194,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[127]:</div>
+    <div class="prompt output_prompt">Out[256]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-12191028-eacc-4721-87be-47af44a27ab2">
+  <div id="df-13e4ac8a-f6d4-4530-9c55-3902352c1db2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13237,7 +13232,7 @@ div#notebook {
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-12191028-eacc-4721-87be-47af44a27ab2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-13e4ac8a-f6d4-4530-9c55-3902352c1db2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13288,12 +13283,12 @@ div#notebook {
 
       <script>
         const buttonEl =
-          document.querySelector('#df-12191028-eacc-4721-87be-47af44a27ab2 button.colab-df-convert');
+          document.querySelector('#df-13e4ac8a-f6d4-4530-9c55-3902352c1db2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-12191028-eacc-4721-87be-47af44a27ab2');
+          const element = document.querySelector('#df-13e4ac8a-f6d4-4530-9c55-3902352c1db2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13331,7 +13326,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[257]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Data types analysis</span>
@@ -13344,7 +13339,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[258]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">measles</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;disease&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MEASLES&quot;</span><span class="p">]</span>
@@ -13361,7 +13356,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[129]:</div>
+    <div class="prompt output_prompt">Out[258]:</div>
 
 
 
@@ -13378,7 +13373,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[259]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#in order to visualize the case prevelance across the entire country, we will drop the </span>
@@ -13420,7 +13415,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[260]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Measles</span>
@@ -13459,13 +13454,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[260]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-c01dd037-838f-4137-ac2a-64f22d0c2b83">
+  <div id="df-575107bf-528b-4004-91b7-15be6304c719">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13530,7 +13525,7 @@ div#notebook {
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c01dd037-838f-4137-ac2a-64f22d0c2b83')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-575107bf-528b-4004-91b7-15be6304c719')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13581,12 +13576,12 @@ div#notebook {
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c01dd037-838f-4137-ac2a-64f22d0c2b83 button.colab-df-convert');
+          document.querySelector('#df-575107bf-528b-4004-91b7-15be6304c719 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c01dd037-838f-4137-ac2a-64f22d0c2b83');
+          const element = document.querySelector('#df-575107bf-528b-4004-91b7-15be6304c719');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13623,7 +13618,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[261]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Polio</span>
@@ -13662,13 +13657,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[132]:</div>
+    <div class="prompt output_prompt">Out[261]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0861182950&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f36f7d0&gt;</pre>
 </div>
 
 </div>
@@ -13701,7 +13696,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[262]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Smallpox</span>
@@ -13740,13 +13735,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[133]:</div>
+    <div class="prompt output_prompt">Out[262]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0860797710&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f5b1350&gt;</pre>
 </div>
 
 </div>
@@ -13779,7 +13774,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[263]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Pertussis</span>
@@ -13818,13 +13813,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[134]:</div>
+    <div class="prompt output_prompt">Out[263]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0860edb290&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f08605ea090&gt;</pre>
 </div>
 
 </div>
@@ -13857,7 +13852,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[264]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Hepatitis A</span>
@@ -13896,13 +13891,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[135]:</div>
+    <div class="prompt output_prompt">Out[264]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0860f68110&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f667190&gt;</pre>
 </div>
 
 </div>
@@ -13935,7 +13930,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="prompt input_prompt">In&nbsp;[265]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Rubella</span>
@@ -13974,13 +13969,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[136]:</div>
+    <div class="prompt output_prompt">Out[265]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f086106a790&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f1b1210&gt;</pre>
 </div>
 
 </div>
@@ -14013,7 +14008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[266]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Mumps</span>
@@ -14052,13 +14047,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[137]:</div>
+    <div class="prompt output_prompt">Out[266]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f086108c790&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f7059d0&gt;</pre>
 </div>
 
 </div>
@@ -14091,7 +14086,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[267]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">vaccine_data</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;Measles&quot;</span><span class="p">,</span> <span class="mi">1963</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Polio&quot;</span><span class="p">,</span> <span class="mi">1955</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Smallpox&quot;</span><span class="p">,</span> <span class="mi">1798</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Pertussis&quot;</span><span class="p">,</span> <span class="mi">1915</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Hepatitis A&quot;</span><span class="p">,</span> <span class="mi">1995</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Rubella&quot;</span><span class="p">,</span> <span class="mi">1971</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Mumps&quot;</span><span class="p">,</span> <span class="mi">1971</span><span class="p">)]</span>
@@ -14152,7 +14147,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[268]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span>
@@ -14250,7 +14245,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[269]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">geopandas</span>
@@ -14276,20 +14271,20 @@ div#notebook {
 <pre>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: geopandas in /usr/local/lib/python3.7/dist-packages (0.10.2)
 Requirement already satisfied: fiona&gt;=1.8 in /usr/local/lib/python3.7/dist-packages (from geopandas) (1.8.22)
-Requirement already satisfied: pyproj&gt;=2.2.0 in /usr/local/lib/python3.7/dist-packages (from geopandas) (3.2.1)
-Requirement already satisfied: pandas&gt;=0.25.0 in /usr/local/lib/python3.7/dist-packages (from geopandas) (1.3.5)
 Requirement already satisfied: shapely&gt;=1.6 in /usr/local/lib/python3.7/dist-packages (from geopandas) (1.8.5.post1)
-Requirement already satisfied: click-plugins&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (1.1.1)
-Requirement already satisfied: munch in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (2.5.0)
-Requirement already satisfied: setuptools in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (57.4.0)
+Requirement already satisfied: pandas&gt;=0.25.0 in /usr/local/lib/python3.7/dist-packages (from geopandas) (1.3.5)
+Requirement already satisfied: pyproj&gt;=2.2.0 in /usr/local/lib/python3.7/dist-packages (from geopandas) (3.2.1)
 Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (2022.9.24)
 Requirement already satisfied: attrs&gt;=17 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (22.1.0)
-Requirement already satisfied: six&gt;=1.7 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (1.15.0)
 Requirement already satisfied: click&gt;=4.0 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (7.1.2)
+Requirement already satisfied: munch in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (2.5.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (57.4.0)
+Requirement already satisfied: six&gt;=1.7 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (1.15.0)
 Requirement already satisfied: cligj&gt;=0.5 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (0.7.2)
+Requirement already satisfied: click-plugins&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from fiona&gt;=1.8-&gt;geopandas) (1.1.1)
 Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.25.0-&gt;geopandas) (2.8.2)
-Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.25.0-&gt;geopandas) (2022.6)
 Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.25.0-&gt;geopandas) (1.21.6)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.25.0-&gt;geopandas) (2022.6)
 </pre>
 </div>
 </div>
@@ -14308,7 +14303,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[270]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">geopandas</span>
@@ -14327,13 +14322,13 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[141]:</div>
+    <div class="prompt output_prompt">Out[270]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-f1911947-dacb-4f2a-b5b0-c6aa60959349">
+  <div id="df-8c24c4d4-ec74-4eb2-8dec-e98bbe619ce2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14482,7 +14477,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f1911947-dacb-4f2a-b5b0-c6aa60959349')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8c24c4d4-ec74-4eb2-8dec-e98bbe619ce2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -14533,12 +14528,12 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f1911947-dacb-4f2a-b5b0-c6aa60959349 button.colab-df-convert');
+          document.querySelector('#df-8c24c4d4-ec74-4eb2-8dec-e98bbe619ce2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f1911947-dacb-4f2a-b5b0-c6aa60959349');
+          const element = document.querySelector('#df-8c24c4d4-ec74-4eb2-8dec-e98bbe619ce2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14577,7 +14572,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[271]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1">#grabbing column names</span>
@@ -14593,7 +14588,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[142]:</div>
+    <div class="prompt output_prompt">Out[271]:</div>
 
 
 
@@ -14613,7 +14608,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="prompt input_prompt">In&nbsp;[272]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;OBJECTID&#39;</span><span class="p">,</span> <span class="s1">&#39;REGION&#39;</span><span class="p">,</span> <span class="s1">&#39;DIVISION&#39;</span><span class="p">,</span> <span class="s1">&#39;STATEFP&#39;</span><span class="p">,</span> <span class="s1">&#39;STATENS&#39;</span><span class="p">,</span> <span class="s1">&#39;GEOID&#39;</span><span class="p">,</span>
@@ -14634,13 +14629,13 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[143]:</div>
+    <div class="prompt output_prompt">Out[272]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-47f805b4-0b30-46c5-b58e-00a8d46789db">
+  <div id="df-5c8f85b7-f7c5-4322-80aa-169d7c4676d2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14693,7 +14688,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-47f805b4-0b30-46c5-b58e-00a8d46789db')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5c8f85b7-f7c5-4322-80aa-169d7c4676d2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -14744,12 +14739,12 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
       <script>
         const buttonEl =
-          document.querySelector('#df-47f805b4-0b30-46c5-b58e-00a8d46789db button.colab-df-convert');
+          document.querySelector('#df-5c8f85b7-f7c5-4322-80aa-169d7c4676d2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-47f805b4-0b30-46c5-b58e-00a8d46789db');
+          const element = document.querySelector('#df-5c8f85b7-f7c5-4322-80aa-169d7c4676d2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14779,7 +14774,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="prompt input_prompt">In&nbsp;[273]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14795,7 +14790,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[144]:</div>
+    <div class="prompt output_prompt">Out[273]:</div>
 
 
 
@@ -14828,7 +14823,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="prompt input_prompt">In&nbsp;[274]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14844,7 +14839,7 @@ Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[145]:</div>
+    <div class="prompt output_prompt">Out[274]:</div>
 
 
 
@@ -14873,7 +14868,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[275]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">states</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="s1">&#39;Geometry&#39;</span><span class="p">)</span> <span class="c1">#turning the dataframe into a geodataframe object</span>
@@ -14892,7 +14887,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[146]:</div>
+    <div class="prompt output_prompt">Out[275]:</div>
 
 
 
@@ -14956,7 +14951,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[276]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -14995,7 +14990,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[147]:</div>
+    <div class="prompt output_prompt">Out[276]:</div>
 
 
 
@@ -16148,7 +16143,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="prompt input_prompt">In&nbsp;[277]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_measles_df</span> <span class="o">=</span> <span class="n">states_measles_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -16168,13 +16163,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[148]:</div>
+    <div class="prompt output_prompt">Out[277]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-8c1741a2-e83a-4041-8c42-a7f149e7e461">
+  <div id="df-fdf8b3fc-1d7e-4cb4-b358-0e7f26b5be32">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -16342,7 +16337,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 68 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8c1741a2-e83a-4041-8c42-a7f149e7e461')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fdf8b3fc-1d7e-4cb4-b358-0e7f26b5be32')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -16393,12 +16388,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8c1741a2-e83a-4041-8c42-a7f149e7e461 button.colab-df-convert');
+          document.querySelector('#df-fdf8b3fc-1d7e-4cb4-b358-0e7f26b5be32 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8c1741a2-e83a-4041-8c42-a7f149e7e461');
+          const element = document.querySelector('#df-fdf8b3fc-1d7e-4cb4-b358-0e7f26b5be32');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -16436,7 +16431,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="prompt input_prompt">In&nbsp;[278]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1928 and 2002? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -16522,7 +16517,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="prompt input_prompt">In&nbsp;[279]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -16559,13 +16554,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[150]:</div>
+    <div class="prompt output_prompt">Out[279]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-1aac938b-c54b-4b5b-b578-26c4a188b34e">
+  <div id="df-3dfae515-5324-4016-8770-7d668e0ffffb">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -16757,7 +16752,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 51 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1aac938b-c54b-4b5b-b578-26c4a188b34e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3dfae515-5324-4016-8770-7d668e0ffffb')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -16808,12 +16803,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1aac938b-c54b-4b5b-b578-26c4a188b34e button.colab-df-convert');
+          document.querySelector('#df-3dfae515-5324-4016-8770-7d668e0ffffb button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1aac938b-c54b-4b5b-b578-26c4a188b34e');
+          const element = document.querySelector('#df-3dfae515-5324-4016-8770-7d668e0ffffb');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -16843,7 +16838,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[280]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_polio_df</span> <span class="o">=</span> <span class="n">states_polio_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -16863,13 +16858,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[151]:</div>
+    <div class="prompt output_prompt">Out[280]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-b0c79dc6-1fd7-45a8-974a-1d7b8c14dfc4">
+  <div id="df-48e30a07-0c7b-4483-a64b-9bcb88b5054f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -17037,7 +17032,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 41 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b0c79dc6-1fd7-45a8-974a-1d7b8c14dfc4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-48e30a07-0c7b-4483-a64b-9bcb88b5054f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -17088,12 +17083,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b0c79dc6-1fd7-45a8-974a-1d7b8c14dfc4 button.colab-df-convert');
+          document.querySelector('#df-48e30a07-0c7b-4483-a64b-9bcb88b5054f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b0c79dc6-1fd7-45a8-974a-1d7b8c14dfc4');
+          const element = document.querySelector('#df-48e30a07-0c7b-4483-a64b-9bcb88b5054f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -17123,7 +17118,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
+<div class="prompt input_prompt">In&nbsp;[281]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1928 and 1968? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -17201,7 +17196,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
+<div class="prompt input_prompt">In&nbsp;[282]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -17238,13 +17233,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[153]:</div>
+    <div class="prompt output_prompt">Out[282]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-92c02875-83c6-439d-add6-96b6d5d743da">
+  <div id="df-a567c17d-57f4-4eef-a912-7419a7fc16b3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -17436,7 +17431,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 51 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-92c02875-83c6-439d-add6-96b6d5d743da')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a567c17d-57f4-4eef-a912-7419a7fc16b3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -17487,12 +17482,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-92c02875-83c6-439d-add6-96b6d5d743da button.colab-df-convert');
+          document.querySelector('#df-a567c17d-57f4-4eef-a912-7419a7fc16b3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-92c02875-83c6-439d-add6-96b6d5d743da');
+          const element = document.querySelector('#df-a567c17d-57f4-4eef-a912-7419a7fc16b3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -17522,7 +17517,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[283]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_pertussis_df</span> <span class="o">=</span> <span class="n">states_pertussis_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -17542,13 +17537,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[154]:</div>
+    <div class="prompt output_prompt">Out[283]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-716f8a5e-f63f-4e23-b41e-2b2b2087a635">
+  <div id="df-2c79b0bf-7374-46e5-9ce2-601c01c0c577">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -17716,7 +17711,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 57 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-716f8a5e-f63f-4e23-b41e-2b2b2087a635')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2c79b0bf-7374-46e5-9ce2-601c01c0c577')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -17767,12 +17762,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-716f8a5e-f63f-4e23-b41e-2b2b2087a635 button.colab-df-convert');
+          document.querySelector('#df-2c79b0bf-7374-46e5-9ce2-601c01c0c577 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-716f8a5e-f63f-4e23-b41e-2b2b2087a635');
+          const element = document.querySelector('#df-2c79b0bf-7374-46e5-9ce2-601c01c0c577');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -17802,7 +17797,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[284]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1938 and 2011? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -17880,7 +17875,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
+<div class="prompt input_prompt">In&nbsp;[285]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -17917,13 +17912,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[156]:</div>
+    <div class="prompt output_prompt">Out[285]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-dda6377c-e400-485a-8f56-4f13ad88604a">
+  <div id="df-f385aa55-3184-46b7-b66f-9980d5c77b4a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -18115,7 +18110,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 49 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-dda6377c-e400-485a-8f56-4f13ad88604a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f385aa55-3184-46b7-b66f-9980d5c77b4a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -18166,12 +18161,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-dda6377c-e400-485a-8f56-4f13ad88604a button.colab-df-convert');
+          document.querySelector('#df-f385aa55-3184-46b7-b66f-9980d5c77b4a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-dda6377c-e400-485a-8f56-4f13ad88604a');
+          const element = document.querySelector('#df-f385aa55-3184-46b7-b66f-9980d5c77b4a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -18201,7 +18196,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[157]:</div>
+<div class="prompt input_prompt">In&nbsp;[286]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_smallpox_df</span> <span class="o">=</span> <span class="n">states_smallpox_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -18221,13 +18216,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[157]:</div>
+    <div class="prompt output_prompt">Out[286]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-2adc7b9a-d295-4e44-ae3e-7303dd7dcd65">
+  <div id="df-a9be7ac4-36eb-4031-9f5b-2c5e4bc6e302">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -18395,7 +18390,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 24 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2adc7b9a-d295-4e44-ae3e-7303dd7dcd65')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a9be7ac4-36eb-4031-9f5b-2c5e4bc6e302')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -18446,12 +18441,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2adc7b9a-d295-4e44-ae3e-7303dd7dcd65 button.colab-df-convert');
+          document.querySelector('#df-a9be7ac4-36eb-4031-9f5b-2c5e4bc6e302 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2adc7b9a-d295-4e44-ae3e-7303dd7dcd65');
+          const element = document.querySelector('#df-a9be7ac4-36eb-4031-9f5b-2c5e4bc6e302');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -18481,7 +18476,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[158]:</div>
+<div class="prompt input_prompt">In&nbsp;[287]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1928 and 1968? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -18559,7 +18554,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[159]:</div>
+<div class="prompt input_prompt">In&nbsp;[288]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -18596,13 +18591,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[159]:</div>
+    <div class="prompt output_prompt">Out[288]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-7accb504-2380-4d6c-b21e-332e36ce59d4">
+  <div id="df-64d8c0bb-19a2-483d-80c5-25deb9a8a289">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -18794,7 +18789,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 51 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7accb504-2380-4d6c-b21e-332e36ce59d4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-64d8c0bb-19a2-483d-80c5-25deb9a8a289')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -18845,12 +18840,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7accb504-2380-4d6c-b21e-332e36ce59d4 button.colab-df-convert');
+          document.querySelector('#df-64d8c0bb-19a2-483d-80c5-25deb9a8a289 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7accb504-2380-4d6c-b21e-332e36ce59d4');
+          const element = document.querySelector('#df-64d8c0bb-19a2-483d-80c5-25deb9a8a289');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -18880,7 +18875,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[160]:</div>
+<div class="prompt input_prompt">In&nbsp;[289]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_hepa_df</span> <span class="o">=</span> <span class="n">states_hepa_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -18900,13 +18895,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[160]:</div>
+    <div class="prompt output_prompt">Out[289]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-6817db7f-26e1-42dc-bccc-b58db2e01b9c">
+  <div id="df-c26d0f43-4379-4fde-84de-bb93af979059">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -19074,7 +19069,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 48 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6817db7f-26e1-42dc-bccc-b58db2e01b9c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c26d0f43-4379-4fde-84de-bb93af979059')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -19125,12 +19120,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6817db7f-26e1-42dc-bccc-b58db2e01b9c button.colab-df-convert');
+          document.querySelector('#df-c26d0f43-4379-4fde-84de-bb93af979059 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6817db7f-26e1-42dc-bccc-b58db2e01b9c');
+          const element = document.querySelector('#df-c26d0f43-4379-4fde-84de-bb93af979059');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -19160,7 +19155,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[290]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1966 and 2011? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -19238,7 +19233,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
+<div class="prompt input_prompt">In&nbsp;[291]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -19275,13 +19270,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[162]:</div>
+    <div class="prompt output_prompt">Out[291]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-6d5cd155-31fc-4879-9586-2064af7cce82">
+  <div id="df-46e91536-42f8-40fc-aab7-e0d2f6f5f1ce">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -19473,7 +19468,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 51 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6d5cd155-31fc-4879-9586-2064af7cce82')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-46e91536-42f8-40fc-aab7-e0d2f6f5f1ce')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -19524,12 +19519,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6d5cd155-31fc-4879-9586-2064af7cce82 button.colab-df-convert');
+          document.querySelector('#df-46e91536-42f8-40fc-aab7-e0d2f6f5f1ce button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6d5cd155-31fc-4879-9586-2064af7cce82');
+          const element = document.querySelector('#df-46e91536-42f8-40fc-aab7-e0d2f6f5f1ce');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -19559,7 +19554,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="prompt input_prompt">In&nbsp;[292]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_rubella_df</span> <span class="o">=</span> <span class="n">states_rubella_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -19579,13 +19574,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[163]:</div>
+    <div class="prompt output_prompt">Out[292]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-518479d6-0355-46d1-a3e2-a891ef4493a2">
+  <div id="df-f3acdc72-9c30-4376-999a-867e455343df">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -19753,7 +19748,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 26 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-518479d6-0355-46d1-a3e2-a891ef4493a2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f3acdc72-9c30-4376-999a-867e455343df')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -19804,12 +19799,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-518479d6-0355-46d1-a3e2-a891ef4493a2 button.colab-df-convert');
+          document.querySelector('#df-f3acdc72-9c30-4376-999a-867e455343df button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-518479d6-0355-46d1-a3e2-a891ef4493a2');
+          const element = document.querySelector('#df-f3acdc72-9c30-4376-999a-867e455343df');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -19839,7 +19834,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[164]:</div>
+<div class="prompt input_prompt">In&nbsp;[293]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1966 and 2002? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -19917,7 +19912,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[294]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">legend</span>
@@ -19954,13 +19949,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[165]:</div>
+    <div class="prompt output_prompt">Out[294]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-ea614123-c810-4590-a913-ff78a15dca2b">
+  <div id="df-af3cc56b-6b2b-480f-b108-d889734c4818">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -20848,7 +20843,7 @@ dtype: int64</pre>
 </table>
 <p>34 rows × 51 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ea614123-c810-4590-a913-ff78a15dca2b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-af3cc56b-6b2b-480f-b108-d889734c4818')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -20899,12 +20894,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ea614123-c810-4590-a913-ff78a15dca2b button.colab-df-convert');
+          document.querySelector('#df-af3cc56b-6b2b-480f-b108-d889734c4818 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ea614123-c810-4590-a913-ff78a15dca2b');
+          const element = document.querySelector('#df-af3cc56b-6b2b-480f-b108-d889734c4818');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -20934,7 +20929,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[295]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">map_mumps_df</span> <span class="o">=</span> <span class="n">states_mumps_incidence</span><span class="o">.</span><span class="n">T</span> <span class="c1">#transpose to get states in a column</span>
@@ -20954,13 +20949,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[166]:</div>
+    <div class="prompt output_prompt">Out[295]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-d8263ba3-e899-4b24-b30c-bab637f67534">
+  <div id="df-ebf70139-4eaf-418e-8b9a-3276a4a6bea7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -21128,7 +21123,7 @@ dtype: int64</pre>
 </table>
 <p>5 rows × 36 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d8263ba3-e899-4b24-b30c-bab637f67534')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ebf70139-4eaf-418e-8b9a-3276a4a6bea7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -21179,12 +21174,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d8263ba3-e899-4b24-b30c-bab637f67534 button.colab-df-convert');
+          document.querySelector('#df-ebf70139-4eaf-418e-8b9a-3276a4a6bea7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d8263ba3-e899-4b24-b30c-bab637f67534');
+          const element = document.querySelector('#df-ebf70139-4eaf-418e-8b9a-3276a4a6bea7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -21214,7 +21209,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[296]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sel</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year would you like to display (between 1968 and 2002? &quot;</span><span class="p">))</span> <span class="c1">#take in input</span>
@@ -21301,7 +21296,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[297]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21315,7 +21310,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[298]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21330,7 +21325,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[299]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21352,7 +21347,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[300]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -21382,13 +21377,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[171]:</div>
+    <div class="prompt output_prompt">Out[300]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f086062ebd0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085eef5d90&gt;</pre>
 </div>
 
 </div>
@@ -21414,7 +21409,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="prompt input_prompt">In&nbsp;[301]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">###</span>
@@ -21434,7 +21429,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="prompt input_prompt">In&nbsp;[302]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21448,7 +21443,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[303]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21463,7 +21458,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[304]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21485,7 +21480,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[305]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -21515,13 +21510,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[176]:</div>
+    <div class="prompt output_prompt">Out[305]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0862081350&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085eca1990&gt;</pre>
 </div>
 
 </div>
@@ -21554,7 +21549,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="prompt input_prompt">In&nbsp;[306]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21568,7 +21563,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[307]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21583,7 +21578,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="prompt input_prompt">In&nbsp;[308]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21605,7 +21600,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[180]:</div>
+<div class="prompt input_prompt">In&nbsp;[309]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -21635,13 +21630,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[180]:</div>
+    <div class="prompt output_prompt">Out[309]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0860a46a10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f61a710&gt;</pre>
 </div>
 
 </div>
@@ -21674,7 +21669,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[310]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21688,7 +21683,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[182]:</div>
+<div class="prompt input_prompt">In&nbsp;[311]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21703,7 +21698,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[183]:</div>
+<div class="prompt input_prompt">In&nbsp;[312]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21725,7 +21720,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[184]:</div>
+<div class="prompt input_prompt">In&nbsp;[313]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -21755,13 +21750,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[184]:</div>
+    <div class="prompt output_prompt">Out[313]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f08609a3690&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f086097e710&gt;</pre>
 </div>
 
 </div>
@@ -21794,7 +21789,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[185]:</div>
+<div class="prompt input_prompt">In&nbsp;[314]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21808,7 +21803,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[186]:</div>
+<div class="prompt input_prompt">In&nbsp;[315]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21823,7 +21818,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[187]:</div>
+<div class="prompt input_prompt">In&nbsp;[316]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21845,7 +21840,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[188]:</div>
+<div class="prompt input_prompt">In&nbsp;[317]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -21875,13 +21870,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[188]:</div>
+    <div class="prompt output_prompt">Out[317]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0860b1aa10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f3f8e10&gt;</pre>
 </div>
 
 </div>
@@ -21907,7 +21902,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[189]:</div>
+<div class="prompt input_prompt">In&nbsp;[318]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">###</span>
@@ -21927,7 +21922,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[190]:</div>
+<div class="prompt input_prompt">In&nbsp;[319]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -21941,7 +21936,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[320]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -21956,7 +21951,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[321]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -21978,7 +21973,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="prompt input_prompt">In&nbsp;[322]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -22008,13 +22003,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[193]:</div>
+    <div class="prompt output_prompt">Out[322]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f08607f6950&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f08613f1450&gt;</pre>
 </div>
 
 </div>
@@ -22040,7 +22035,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[194]:</div>
+<div class="prompt input_prompt">In&nbsp;[323]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">###</span>
@@ -22060,7 +22055,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[195]:</div>
+<div class="prompt input_prompt">In&nbsp;[324]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#reset index to year for joining</span>
@@ -22074,7 +22069,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[325]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grab the national incidence and add it into a new dataframe with state incidences</span>
@@ -22089,7 +22084,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[197]:</div>
+<div class="prompt input_prompt">In&nbsp;[326]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#rename column </span>
@@ -22111,7 +22106,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="prompt input_prompt">In&nbsp;[327]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.core.groupby.groupby</span> <span class="kn">import</span> <span class="n">DataFrame</span>
@@ -22141,13 +22136,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[198]:</div>
+    <div class="prompt output_prompt">Out[327]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0870933690&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f085f468550&gt;</pre>
 </div>
 
 </div>
@@ -22173,7 +22168,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="prompt input_prompt">In&nbsp;[328]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">###</span>
@@ -22201,7 +22196,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[200]:</div>
+<div class="prompt input_prompt">In&nbsp;[329]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">df_density</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../finalProject/apportionment.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
@@ -22234,13 +22229,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[200]:</div>
+    <div class="prompt output_prompt">Out[329]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-3bd5c73f-0c8d-4b4d-a641-82b0437b2d00">
+  <div id="df-374cd201-363b-41d6-9b92-9b21bf005228">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -22348,7 +22343,7 @@ dtype: int64</pre>
 </table>
 <p>684 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3bd5c73f-0c8d-4b4d-a641-82b0437b2d00')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-374cd201-363b-41d6-9b92-9b21bf005228')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -22399,12 +22394,12 @@ dtype: int64</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3bd5c73f-0c8d-4b4d-a641-82b0437b2d00 button.colab-df-convert');
+          document.querySelector('#df-374cd201-363b-41d6-9b92-9b21bf005228 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3bd5c73f-0c8d-4b4d-a641-82b0437b2d00');
+          const element = document.querySelector('#df-374cd201-363b-41d6-9b92-9b21bf005228');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -22442,7 +22437,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[201]:</div>
+<div class="prompt input_prompt">In&nbsp;[330]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">pop_density</span> <span class="o">=</span> <span class="n">df_density</span><span class="p">[</span><span class="n">df_density</span><span class="p">[</span><span class="s1">&#39;Geography Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;State&#39;</span><span class="p">]</span>
@@ -22475,13 +22470,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[201]:</div>
+    <div class="prompt output_prompt">Out[330]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-d1f04c6a-6f2f-4de2-b86a-2d0ae8a6886e">
+  <div id="df-2c7cf792-e864-49c1-8db3-829a564419df">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -22589,7 +22584,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>612 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d1f04c6a-6f2f-4de2-b86a-2d0ae8a6886e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2c7cf792-e864-49c1-8db3-829a564419df')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -22640,12 +22635,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d1f04c6a-6f2f-4de2-b86a-2d0ae8a6886e button.colab-df-convert');
+          document.querySelector('#df-2c7cf792-e864-49c1-8db3-829a564419df button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d1f04c6a-6f2f-4de2-b86a-2d0ae8a6886e');
+          const element = document.querySelector('#df-2c7cf792-e864-49c1-8db3-829a564419df');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -22675,7 +22670,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[331]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#check the datatypes of the dataset</span>
@@ -22692,7 +22687,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[202]:</div>
+    <div class="prompt output_prompt">Out[331]:</div>
 
 
 
@@ -22713,7 +22708,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="prompt input_prompt">In&nbsp;[332]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#change the resident population density to a float</span>
@@ -22748,7 +22743,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[203]:</div>
+    <div class="prompt output_prompt">Out[332]:</div>
 
 
 
@@ -22773,7 +22768,7 @@ Name: Resident Population Density, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[204]:</div>
+<div class="prompt input_prompt">In&nbsp;[333]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#We also need to make the states uppercase for easu combining later</span>
@@ -22809,13 +22804,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[204]:</div>
+    <div class="prompt output_prompt">Out[333]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-5c3294ea-79db-4952-b8c8-75b12e4faf0a">
+  <div id="df-7963bba3-1bd1-4887-aa61-573fd177017f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -22880,7 +22875,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5c3294ea-79db-4952-b8c8-75b12e4faf0a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7963bba3-1bd1-4887-aa61-573fd177017f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -22931,12 +22926,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5c3294ea-79db-4952-b8c8-75b12e4faf0a button.colab-df-convert');
+          document.querySelector('#df-7963bba3-1bd1-4887-aa61-573fd177017f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5c3294ea-79db-4952-b8c8-75b12e4faf0a');
+          const element = document.querySelector('#df-7963bba3-1bd1-4887-aa61-573fd177017f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -22974,7 +22969,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[205]:</div>
+<div class="prompt input_prompt">In&nbsp;[334]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#create list of years needed to fill in the population density data frame</span>
@@ -23009,7 +23004,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[206]:</div>
+<div class="prompt input_prompt">In&nbsp;[335]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#use interpolate to approximate population density for each year in each state. </span>
@@ -23049,7 +23044,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[207]:</div>
+<div class="prompt input_prompt">In&nbsp;[336]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../finalProject/income.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">skiprows</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
@@ -23070,13 +23065,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[207]:</div>
+    <div class="prompt output_prompt">Out[336]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-db20d340-dd5e-494d-a3f6-00af43c6d7fb">
+  <div id="df-bee6b4b8-553b-4f99-907b-d2d28325472f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -23388,7 +23383,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>65 rows × 95 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-db20d340-dd5e-494d-a3f6-00af43c6d7fb')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bee6b4b8-553b-4f99-907b-d2d28325472f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -23439,12 +23434,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-db20d340-dd5e-494d-a3f6-00af43c6d7fb button.colab-df-convert');
+          document.querySelector('#df-bee6b4b8-553b-4f99-907b-d2d28325472f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-db20d340-dd5e-494d-a3f6-00af43c6d7fb');
+          const element = document.querySelector('#df-bee6b4b8-553b-4f99-907b-d2d28325472f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -23484,7 +23479,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[208]:</div>
+<div class="prompt input_prompt">In&nbsp;[337]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -23539,7 +23534,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[208]:</div>
+    <div class="prompt output_prompt">Out[337]:</div>
 
 
 
@@ -23564,7 +23559,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[209]:</div>
+<div class="prompt input_prompt">In&nbsp;[338]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_df</span> <span class="c1">#resulting dataset</span>
@@ -23580,13 +23575,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[209]:</div>
+    <div class="prompt output_prompt">Out[338]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-f06d236d-db7d-4b5f-8d7c-38c82ad1d399">
+  <div id="df-bc89f26a-1e70-4e6e-873e-a62bdd94224d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -25074,7 +25069,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>60 rows × 94 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f06d236d-db7d-4b5f-8d7c-38c82ad1d399')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bc89f26a-1e70-4e6e-873e-a62bdd94224d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -25125,12 +25120,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f06d236d-db7d-4b5f-8d7c-38c82ad1d399 button.colab-df-convert');
+          document.querySelector('#df-bc89f26a-1e70-4e6e-873e-a62bdd94224d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f06d236d-db7d-4b5f-8d7c-38c82ad1d399');
+          const element = document.querySelector('#df-bc89f26a-1e70-4e6e-873e-a62bdd94224d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -25168,7 +25163,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="prompt input_prompt">In&nbsp;[339]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_df1</span> <span class="o">=</span> <span class="n">income_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;GeoName&#39;</span><span class="p">)</span> <span class="c1">#reset index to be by state</span>
@@ -25189,13 +25184,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[210]:</div>
+    <div class="prompt output_prompt">Out[339]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-4de83b7b-f845-4c3a-a3b4-aea00508b354">
+  <div id="df-58e50f48-94db-490f-b2b6-9b8ead499a2e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -25507,7 +25502,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>93 rows × 61 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4de83b7b-f845-4c3a-a3b4-aea00508b354')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-58e50f48-94db-490f-b2b6-9b8ead499a2e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -25558,12 +25553,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4de83b7b-f845-4c3a-a3b4-aea00508b354 button.colab-df-convert');
+          document.querySelector('#df-58e50f48-94db-490f-b2b6-9b8ead499a2e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4de83b7b-f845-4c3a-a3b4-aea00508b354');
+          const element = document.querySelector('#df-58e50f48-94db-490f-b2b6-9b8ead499a2e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -25601,7 +25596,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="prompt input_prompt">In&nbsp;[340]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_dfT1</span><span class="o">.</span><span class="n">dtypes</span>
@@ -25617,7 +25612,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[211]:</div>
+    <div class="prompt output_prompt">Out[340]:</div>
 
 
 
@@ -25654,7 +25649,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="prompt input_prompt">In&nbsp;[341]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">cols_income</span> <span class="o">=</span> <span class="n">income_dfT1</span><span class="o">.</span><span class="n">columns</span>
@@ -25673,7 +25668,7 @@ Length: 61, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[212]:</div>
+    <div class="prompt output_prompt">Out[341]:</div>
 
 
 
@@ -25701,7 +25696,7 @@ Name: ARIZONA, Length: 93, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[213]:</div>
+<div class="prompt input_prompt">In&nbsp;[342]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_dfT1</span><span class="o">.</span><span class="n">dtypes</span>
@@ -25717,7 +25712,7 @@ Name: ARIZONA, Length: 93, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[213]:</div>
+    <div class="prompt output_prompt">Out[342]:</div>
 
 
 
@@ -25763,7 +25758,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[214]:</div>
+<div class="prompt input_prompt">In&nbsp;[343]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#grabbing names of columns to plot, not including state name</span>
@@ -25788,7 +25783,7 @@ Length: 61, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[214]:</div>
+    <div class="prompt output_prompt">Out[343]:</div>
 
 
 
@@ -25829,7 +25824,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[215]:</div>
+<div class="prompt input_prompt">In&nbsp;[344]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">income_dfT1</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -25846,13 +25841,13 @@ Length: 61, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[215]:</div>
+    <div class="prompt output_prompt">Out[344]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-ce34a7fa-510c-47ca-b2d8-8279bf1095f9">
+  <div id="df-915ab0a2-fdb0-43d1-8423-69c8bda6168d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -26044,7 +26039,7 @@ Length: 61, dtype: object</pre>
 </table>
 <p>5 rows × 60 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ce34a7fa-510c-47ca-b2d8-8279bf1095f9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-915ab0a2-fdb0-43d1-8423-69c8bda6168d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -26095,12 +26090,12 @@ Length: 61, dtype: object</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ce34a7fa-510c-47ca-b2d8-8279bf1095f9 button.colab-df-convert');
+          document.querySelector('#df-915ab0a2-fdb0-43d1-8423-69c8bda6168d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ce34a7fa-510c-47ca-b2d8-8279bf1095f9');
+          const element = document.querySelector('#df-915ab0a2-fdb0-43d1-8423-69c8bda6168d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -26130,7 +26125,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[216]:</div>
+<div class="prompt input_prompt">In&nbsp;[345]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">all_states</span> <span class="o">=</span> <span class="n">states_measles_incidence</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1">#grabbing the names of all the states</span>
@@ -26152,7 +26147,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[217]:</div>
+<div class="prompt input_prompt">In&nbsp;[346]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">correl_income_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">])</span> <span class="c1">#creating a dataframe of 2 columns</span>
@@ -26203,13 +26198,13 @@ Length: 61, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[217]:</div>
+    <div class="prompt output_prompt">Out[346]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-d53aba95-2b38-485e-902c-892918ed5a8a">
+  <div id="df-2fab0753-e2f4-4440-bc5e-93e53cb744a1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -26752,7 +26747,7 @@ Length: 61, dtype: object</pre>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d53aba95-2b38-485e-902c-892918ed5a8a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2fab0753-e2f4-4440-bc5e-93e53cb744a1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -26803,12 +26798,12 @@ Length: 61, dtype: object</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d53aba95-2b38-485e-902c-892918ed5a8a button.colab-df-convert');
+          document.querySelector('#df-2fab0753-e2f4-4440-bc5e-93e53cb744a1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d53aba95-2b38-485e-902c-892918ed5a8a');
+          const element = document.querySelector('#df-2fab0753-e2f4-4440-bc5e-93e53cb744a1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -26848,7 +26843,7 @@ Length: 61, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[218]:</div>
+<div class="prompt input_prompt">In&nbsp;[347]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Max correlation for measles: &#39;</span><span class="p">,</span> <span class="n">correl_income_df</span><span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">correl_income_df</span><span class="p">[</span><span class="s1">&#39;Correlation for Measles&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()])</span>
@@ -26936,12 +26931,12 @@ Avg correlation for measles:  -0.4393191688736428
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[219]:</div>
+<div class="prompt input_prompt">In&nbsp;[348]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
 
-<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="s2">&quot;/content/drive/My Drive/cmps3160/finalProject/Final_Project.ipynb&quot;</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="s2">&quot;/content/drive/MyDrive/cmps3160/finalProject/Final_Project_Disease_Prevalence.ipynb&quot;</span>
 </pre></div>
 
     </div>
@@ -26958,15 +26953,15 @@ Avg correlation for measles:  -0.4393191688736428
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook /content/drive/My Drive/cmps3160/finalProject/Final_Project.ipynb to html
-[NbConvertApp] Writing 325999 bytes to /content/drive/My Drive/cmps3160/finalProject/Final_Project.html
+<pre>[NbConvertApp] Converting notebook /content/drive/MyDrive/cmps3160/finalProject/Final_Project_Disease_Prevalence.ipynb to html
+[NbConvertApp] Writing 1946934 bytes to /content/drive/MyDrive/cmps3160/finalProject/Final_Project_Disease_Prevalence.html
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[219]:</div>
+    <div class="prompt output_prompt">Out[348]:</div>
 
 
 
